@@ -1,227 +1,606 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
+    <meta name="description" content="Vansh Kumar — software engineer & builder. I design systems, write the code, and ship them.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Vansh</title>
+    <title>Vansh Kumar — Builder & Software Engineer</title>
 </head>
 <body>
-<!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Vansh kumar</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#project" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Project
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-comment-info nav__icon"></i> Contact Me
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-        </nav>
-    </header>
 
-<!--==================== MAIN ====================-->
-<main class="main">
-    <!--==================== HOME ====================-->
-   <section class="home section" id="home">
-        <div class="home__container container grid">
-            <div class="home__content grid">
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/vansh-kumar-kathpalia/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://github.com/vanshk27/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-github-alt"></i>
-                    </a>  
-                    <!-- <a href="https://www.youtube.com/aicoding" target="_blank" class="home__social-icon">
-                        <i class="uil uil-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ai.coding/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/aicoding_" target="_blank" class="home__social-icon">
-                        <i class="uil uil-twitter-alt"></i> 
-                    </a> -->
+<!-- ==================== HEADER ==================== -->
+<header class="header" id="header">
+    <nav class="nav wrap">
+        <a href="#home" class="nav__logo">
+            <span class="nav__mark">VK</span> vansh kumar
+        </a>
+        <ul class="nav__list" id="nav-list">
+            <button class="nav__close" id="nav-close" aria-label="Close menu">&times;</button>
+            <li><a href="#home"    class="nav__link active">home</a></li>
+            <li><a href="#about"   class="nav__link">about</a></li>
+            <li><a href="#work"    class="nav__link">work</a></li>
+            <li><a href="#rnd"     class="nav__link">r&amp;d</a></li>
+            <li><a href="#contact" class="nav__link">contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </nav>
+</header>
+
+<main>
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+    <div class="wrap hero__grid">
+        <div class="hero__intro">
+            <span class="eyebrow hero__eyebrow">
+                <span class="hero__dot"></span> builder · systems thinker · full-stack
+            </span>
+            <h1 class="hero__title">I turn problems<br>into systems<br>that <em>ship</em>.</h1>
+            <p class="hero__desc">
+                Final-year IT student who'd rather build the thing than talk about it.
+                I sketch the architecture, write the code, and ship it.
+            </p>
+            <div class="hero__cta">
+                <a href="#work" class="btn btn--primary">View the pipeline &rarr;</a>
+                <a href="#contact" class="btn btn--ghost">Get in touch</a>
+            </div>
+
+            <div class="board">
+                <div class="board__cell board__cell--live">
+                    <div class="board__num">02</div>
+                    <div class="board__label">live</div>
                 </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Vansh</h1>
-                        <h5 class="home__aka">IT Student</h5>
-                        <h3 class="home__subtitle">Web Developer</h3>
-                        <!-- <p class="home__description">Making data fun - and useful.</p> -->
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
+                <div class="board__cell">
+                    <div class="board__num">01</div>
+                    <div class="board__label">built</div>
+                </div>
+                <div class="board__cell board__cell--build">
+                    <div class="board__num">04</div>
+                    <div class="board__label">in build</div>
+                </div>
+                <div class="board__cell">
+                    <div class="board__num">03</div>
+                    <div class="board__label">r&amp;d</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="figure">
+            <span class="tick tick--tl"></span><span class="tick tick--tr"></span>
+            <span class="tick tick--bl"></span><span class="tick tick--br"></span>
+            <div class="figure__frame">
+                <img src="assets/my_image.webp" alt="Vansh Kumar">
+            </div>
+            <div class="figure__cap">FIG.01 — vansh kumar · GJUST hisar · building since '21</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="section" id="about">
+    <div class="wrap">
+        <div class="section__head reveal">
+            <span class="section__index">// 01 — about</span>
+            <h2 class="section__title">The short version</h2>
+        </div>
+        <div class="about__grid">
+            <div class="about__body reveal">
+                <p>
+                    I'm <strong>Vansh Kumar</strong>, an IT undergrad at GJUST, Hisar. What
+                    defines me isn't the degree — it's a habit of <strong>noticing a problem
+                    and building my way out of it.</strong>
+                </p>
+                <p>
+                    Some builds are live, some run locally, some are mid-build. I'd rather show
+                    a full pipeline of honest work than one polished thing.
+                </p>
+
+                <div class="stack">
+                    <div class="stack__title">Tools I build with</div>
+                    <div class="chips">
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Next.js</span>
+                        <span class="chip">Node</span>
+                        <span class="chip">Fastify</span>
+                        <span class="chip">Hono</span>
+                        <span class="chip">FastAPI</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">Prisma</span>
+                        <span class="chip">Cloudflare Workers</span>
+                        <span class="chip">Solidity / Web3</span>
+                        <span class="chip">Capacitor</span>
+                        <span class="chip">TensorFlow.js</span>
+                        <span class="chip">RAG / LLMs</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title"> About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <aside class="facts reveal">
+                <div class="fact"><span class="fact__k">role</span><span class="fact__v">Software Engineer / Builder</span></div>
+                <div class="fact"><span class="fact__k">specialty</span><span class="fact__v">TypeScript &middot; full-stack &middot; AI</span></div>
+                <div class="fact"><span class="fact__k">location</span><span class="fact__v">Hisar, India</span></div>
+                <div class="fact"><span class="fact__k">shipped</span><span class="fact__v">2 live, demos on request</span></div>
+                <div class="fact"><span class="fact__k">status</span><span class="fact__v">open to roles</span></div>
+            </aside>
+        </div>
+    </div>
+</section>
 
-            <div class="about__container container grid">
-                <img src="assets/me1.jpg" class="about__img">
+<!-- ==================== WORK / PIPELINE ==================== -->
+<section class="section" id="work">
+    <div class="wrap">
+        <div class="section__head reveal">
+            <span class="section__index">// 02 — work</span>
+            <h2 class="section__title">The build pipeline</h2>
+            <p class="section__lead">
+                Everything I've made, sorted by how far down the road it is — from live in
+                production to in-build. Click any card for the problem, the architecture
+                diagram, the stack, and screenshots.
+            </p>
+            <div class="legend">
+                <span class="legend__item"><span class="legend__sw" style="background:var(--live)"></span> live</span>
+                <span class="legend__item"><span class="legend__sw" style="background:var(--architect)"></span> built · demo-ready</span>
+                <span class="legend__item"><span class="legend__sw" style="background:var(--build)"></span> in build</span>
+            </div>
+        </div>
 
-                <div class="about__data">
-                    <p class="about__description">
-                        I am a IT Student at Guru Jambheshwar University of Science and Technology, Hisar. Currently 
-                        in my 4th year of undergraduate degree.
-                    </p>
+        <div class="cards">
+            <!-- HareHare (flagship · professional) -->
+            <article class="card is-live reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-001 · professional</div>
+                        <h3 class="card__name">HareHare</h3>
+                    </div>
+                    <span class="status">live</span>
+                </div>
+                <p class="card__desc">
+                    A devotional AI app — chat for spiritual guidance and scripture, learn how
+                    to perform a puja, and book a pandit for the real ceremony. Answers grounded
+                    in scripture, never invented.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">FastAPI</span><span class="tag">RAG</span>
+                    <span class="tag">Vertex AI</span><span class="tag">React / Ionic</span>
+                    <span class="tag">Firebase</span>
+                </div>
+                <div class="card__foot">
+                    <a href="https://harehare.in" target="_blank" rel="noopener" class="card__link">visit live &rarr;</a>
+                    <button class="card__btn" data-modal="harehare">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-harehare">
+                    <div class="modal__block"><div class="modal__h">what it is</div><p>A Hindu devotional app. People chat with it for emotional support, scripture Q&amp;A, and step-by-step puja how-tos — and when they're ready, book a pandit and pay for a real puja, end to end. Live in production, phone-OTP accounts, multilingual.</p></div>
+                    <div class="modal__block"><div class="modal__h">my role</div><p>I built the mobile app, the API server, and the agentic RAG engine from scratch, and designed the booking flow. The most complex system I've shipped.</p></div>
+                    <div class="modal__block"><div class="modal__h">how it works</div><p>Agentic RAG: an intent router picks the path, hybrid retrieval + cross-encoder reranking find the evidence, and an abstain-on-weak-evidence gate means it never invents scripture. Four services on GCP.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>FastAPI · Gemini 2.5 Flash · Vertex AI · Firebase (Auth · Firestore · Remote Config · App Check) · React · Ionic / Capacitor · Next.js · Razorpay · Cloud Run</p></div>
+                    <div class="modal__block"><div class="modal__h">more</div><p>Live in production — happy to walk through my parts in detail.</p></div>
+                </div>
+            </article>
 
-
-                    <div class="about__info">
-                        <div >
-                            <span class="about__info-title">04+</span>
-                            <span class="about__info-name">Certificates</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">01+</span>
-                            <span class="about__info-name">Projects</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Different <br> Skillsets </span>
+            <!-- Sportstolt -->
+            <article class="card is-live reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-002</div>
+                        <h3 class="card__name">SportStolt</h3>
+                    </div>
+                    <span class="status">live</span>
+                </div>
+                <p class="card__desc">
+                    A live sports-community platform — social feed, events, and a Proof-of-Work
+                    trust model — on an edge stack with real payments.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">TypeScript</span><span class="tag">Hono</span>
+                    <span class="tag">Cloudflare Workers</span><span class="tag">React</span>
+                    <span class="tag">Prisma</span>
+                </div>
+                <div class="card__foot">
+                    <a href="https://sport-stolt.vercel.app/" target="_blank" rel="noopener" class="card__link">visit live &rarr;</a>
+                    <button class="card__btn" data-modal="sportstolt">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-sportstolt">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Local sports communities are scattered — no single place to find events, share moments, and build a trusted reputation.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>Social feed, stories, events, notifications, and a Proof-of-Work trust model — with real payments via Cashfree.</p></div>
+                    <div class="modal__block"><div class="modal__h">architecture</div>
+                        <pre class="mermaid">
+flowchart TD
+    subgraph Client["Client · React 18 + Vite SPA"]
+        UI["SPA · React Router · Tailwind / Radix"]
+        TF["TensorFlow.js + MobileNet<br/>(on-device image classify)"]
+        RQ["TanStack Query cache"]
+    end
+    UI -->|"JWT Bearer"| MW["authMiddleware · JWT verify"]
+    subgraph Edge["Backend · Hono on Cloudflare Workers (edge)"]
+        MW --> R["~10 feature routers · /api/v1/*"]
+        CRON["Scheduled cron<br/>(notification verify + cleanup)"]
+    end
+    R --> ACC["Prisma Accelerate<br/>(pooling + edge cache)"]
+    ACC --> DB[("PostgreSQL")]
+    R --> CF["Cashfree · payments"]
+    R --> IK["ImageKit · media"]
+    CRON --> ACC
+    ZOD["@vanshkathpalia/sportstolt-common<br/>shared Zod schemas · published npm pkg"] -. validates .- UI
+    ZOD -. validates .- R
+                        </pre>
+                    </div>
+                    <div class="modal__block"><div class="modal__h">highlight</div><p>Edge backend on Cloudflare Workers; shared Zod schemas published as an npm package; client-side TensorFlow.js image classification.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>Hono · Cloudflare Workers · TypeScript · Prisma · PostgreSQL · React · Cashfree · TensorFlow.js · Turborepo</p></div>
+                    <div class="modal__block"><div class="modal__h">screenshots</div>
+                        <div class="modal__shots">
+                            <div class="modal__shot"><img src="assets/SportStolt/1.png" alt="SportStolt landing page"></div>
+                            <div class="modal__shot"><img src="assets/SportStolt/3.png" alt="Social feed and upcoming events"></div>
+                            <div class="modal__shot"><img src="assets/SportStolt/6.png" alt="Discovery grid"></div>
+                            <div class="modal__shot"><img src="assets/SportStolt/5.png" alt="Event join screen"></div>
+                            <div class="modal__shot"><img src="assets/SportStolt/12.png" alt="Proof of Work program"></div>
+                            <div class="modal__shot"><img src="assets/SportStolt/13.png" alt="Cashfree payment"></div>
                         </div>
                     </div>
                 </div>
+            </article>
+
+            <!-- Notion -> Docs -->
+            <article class="card is-built reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-003 · automation</div>
+                        <h3 class="card__name">Notion → Docs</h3>
+                    </div>
+                    <span class="status">built</span>
+                </div>
+                <p class="card__desc">
+                    An automation that mirrors a Notion page — text, formatting, <em>and images</em>
+                    — into a clean Google Doc you can export as a correct PDF.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">Python</span><span class="tag">Notion API</span>
+                    <span class="tag">Google Docs / Drive</span>
+                </div>
+                <div class="card__foot">
+                    <button class="card__btn" data-modal="notion">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-notion">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Notion's PDF export drops images and breaks formatting. Rebuilding pages by hand doesn't scale.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>A Python script that reads a Notion page and rebuilds it faithfully in Google Docs — no copy-paste.</p></div>
+                    <div class="modal__block"><div class="modal__h">architecture</div>
+                        <pre class="mermaid">
+flowchart LR
+    O2["Google OAuth2<br/>cached + silent refresh"] --> ORCH
+    N["Notion API<br/>walk block tree"] --> ORCH["Python orchestrator"]
+    ORCH --> CM["Normalize → internal content model<br/>headings · lists · quotes · toggles · code · img"]
+    CM -->|"text + paragraph styles"| DOCS["Google Docs API<br/>single batched batchUpdate"]
+    CM -->|images| IMG
+    subgraph IMG["Image pipeline · public-URL constraint"]
+        DL["download"] --> UP["Drive upload"] --> PUB["make public"] --> EMB["insertInlineImage"] --> DEL["delete Drive copy"]
+    end
+    EMB --> DOCS
+    DOCS -->|"reverse-order insert"| PDF["Formatted Doc → PDF"]
+                        </pre>
+                    </div>
+                    <div class="modal__block"><div class="modal__h">highlight</div><p>Docs only embeds images by public URL, so Drive is a throwaway host; blocks insert in reverse order so the doc reads top-down.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>Python · Notion API · Google Docs &amp; Drive API · OAuth 2.0</p></div>
+                </div>
+            </article>
+
+            <!-- NEEPCO Portal -->
+            <article class="card is-build reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-004</div>
+                        <h3 class="card__name">NEEPCO Procurement</h3>
+                    </div>
+                    <span class="status">in build</span>
+                </div>
+                <p class="card__desc">
+                    Decision-support for public-sector procurement: reproducible vendor scoring,
+                    a tamper-evident audit log, and signed bids.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">TypeScript</span><span class="tag">Next.js</span>
+                    <span class="tag">Fastify</span><span class="tag">PostgreSQL</span>
+                    <span class="tag">PASETO</span>
+                </div>
+                <div class="card__foot">
+                    <button class="card__btn" data-modal="neepco">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-neepco">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Public procurement: opaque vendor selection, weak feedback loops, tamper risk on records.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>A reproducible, weighted vendor-scoring engine, a hash-chained audit log, and signed bids — with RBAC separation of duties enforced in code.</p></div>
+                    <div class="modal__block"><div class="modal__h">architecture</div>
+                        <pre class="mermaid">
+flowchart TD
+    subgraph FE["Next.js 15 App Router · React 19"]
+        RBAC["RBAC middleware · server-side"]
+    end
+    RBAC --> API["Fastify API · TS · Zod DTOs"]
+    AUTH["PASETO v4.local · argon2id"] -. sessions .- API
+    API --> PR["Prisma"]
+    PR --> DB[("PostgreSQL 16")]
+    API --> SCORE["Vendor scoring engine<br/>weighted · traceable"]
+    SCORE --> SNAP[("VendorPerformanceSnapshot<br/>immutable · engine-versioned")]
+    API --> SIGN["Signer · Ed25519 → PKCS#11 DSC"]
+    API --> AUD["SHA-256 hash-chain audit log"]
+    AUD --> DB
+    subgraph JOBS["BullMQ + Redis workers"]
+        NB["nightly snapshot"]
+        EM["email / notifications"]
+    end
+    NB --> SNAP
+                        </pre>
+                    </div>
+                    <div class="modal__block"><div class="modal__h">highlight</div><p>Vendor selection becomes a reproducible scoring function — every score traceable to source records, backed by a tamper-evident audit trail.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>Next.js · React · Fastify · TypeScript · Prisma · PostgreSQL · PASETO · argon2id · Ed25519 · BullMQ + Redis</p></div>
+                </div>
+            </article>
+
+            <!-- StudyGroup -->
+            <article class="card is-build reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-005</div>
+                        <h3 class="card__name">StudyGroup</h3>
+                    </div>
+                    <span class="status">in build</span>
+                </div>
+                <p class="card__desc">
+                    A student-notes marketplace with <em>verified-purchase</em> ratings, USDC escrow,
+                    and portable on-chain reputation.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">Next.js</span><span class="tag">Solidity</span>
+                    <span class="tag">Polygon</span><span class="tag">IPFS</span>
+                    <span class="tag">tRPC</span>
+                </div>
+                <div class="card__foot">
+                    <button class="card__btn" data-modal="studygroup">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-studygroup">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Good student notes sell on platforms taking 30–70%, with reviews you can't trust — nobody proves the reviewer actually bought it.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>Smart-contract escrow holds USDC until delivery; only the buying wallet can rate; reputation is a portable soulbound token; files live on IPFS.</p></div>
+                    <!-- <div class="modal__block"><div class="modal__h">highlight</div><p>Blockchain only for escrow, ratings, and reputation — files on IPFS, search in Postgres. Polygon for sub-cent gas.</p></div> -->
+                    <div class="modal__block"><div class="modal__h">stack</div><p>Next.js · wagmi/viem · Fastify + tRPC · Prisma · PostgreSQL · Solidity + Foundry · Polygon · IPFS · USDC</p></div>
+                </div>
+            </article>
+
+            <!-- HealthAlarm / Jiva -->
+            <article class="card is-build reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-006</div>
+                        <h3 class="card__name">Jiva · HealthAlarm</h3>
+                    </div>
+                    <span class="status">in build</span>
+                </div>
+                <p class="card__desc">
+                    A local-first health-reminder app (works offline) that grows into a
+                    pharma-aware, doctor-assisted system.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">React</span><span class="tag">Ionic Capacitor</span>
+                    <span class="tag">FastAPI</span><span class="tag">Celery</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+                <div class="card__foot">
+                    <button class="card__btn" data-modal="healthalarm">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-healthalarm">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Health routines are easy to skip without the right nudge — even offline.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>Local-first reminders (on-device SQLite) that sync to a FastAPI backend; phased toward a pharma/doctor system.</p></div>
+                    <div class="modal__block"><div class="modal__h">highlight</div><p>Local-first: reminders work with no network; pharma logic is data, not hardcode.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>React · Ionic Capacitor · SQLite · FastAPI · Celery + Redis · PostgreSQL · FCM</p></div>
+                </div>
+            </article>
+
+            <!-- CafeData -->
+            <article class="card is-build reveal">
+                <div class="card__top">
+                    <div>
+                        <div class="card__id">PRJ-007</div>
+                        <h3 class="card__name">CafeData</h3>
+                    </div>
+                    <span class="status">in build</span>
+                </div>
+                <p class="card__desc">
+                    QR dine-in ordering that doubles as a regional ordering-intelligence engine —
+                    the app is the data faucet, the data is the business.
+                </p>
+                <div class="card__stack">
+                    <span class="tag">TypeScript</span><span class="tag">NestJS</span>
+                    <span class="tag">Next.js</span><span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+                <div class="card__foot">
+                    <button class="card__btn" data-modal="cafedata">details &rarr;</button>
+                </div>
+                <div class="card__more" id="more-cafedata">
+                    <div class="modal__block"><div class="modal__h">problem</div><p>Cafés run on gut — manual orders, and no data on what to cook or stock.</p></div>
+                    <div class="modal__block"><div class="modal__h">what I built</div><p>QR ordering (scan → order → pay, no app) that turns every order into structured data — sold back as regional intelligence. The app is the faucet; the data is the business.</p></div>
+                    <div class="modal__block"><div class="modal__h">highlight</div><p>The QR ordering app is the wedge; the regional dataset it quietly builds — what sells where and when — is the real product.</p></div>
+                    <div class="modal__block"><div class="modal__h">stack</div><p>NestJS · Next.js · TypeScript · Prisma · PostgreSQL · Socket.IO · Razorpay · Python · FastAPI · DuckDB · dbt</p></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== R&D ==================== -->
+<section class="section" id="rnd">
+    <div class="wrap">
+        <div class="section__head reveal">
+            <span class="section__index">// 03 — r&amp;d</span>
+            <h2 class="section__title">Also exploring</h2>
+            <p class="section__lead">
+                Early ideas, no architecture yet — problems I think are worth solving.
+            </p>
+        </div>
+        <div class="rnd reveal">
+            <div class="note">
+                <span class="note__tag">idea-001</span>
+                <p class="note__q"><b>Alertia</b> — alarms that fire by <b>place, not time</b>. Ring when I actually arrive somewhere; exploring Uber's H3 hex grid for the geofencing.</p>
+            </div>
+            <div class="note">
+                <span class="note__tag">idea-002</span>
+                <p class="note__q"><b>Frequency HUD</b> — a live overlay reading the <b>frequency of whatever music is playing</b> and surfacing it as a notification.</p>
+            </div>
+            <div class="note">
+                <span class="note__tag">idea-003</span>
+                <p class="note__q"><b>Blind-typing assist</b> — an LLM predicts the likely next key; an unlikely keypress triggers <b>haptic feedback</b> so blind typists catch a typo without seeing the screen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="section" id="contact">
+    <div class="wrap">
+        <div class="contact__grid">
+            <div class="reveal">
+                <span class="section__index">// 04 — contact</span>
+                <h2 class="section__title">Let's build something</h2>
+                <p class="section__lead">
+                    Hiring, collaborating, or just want a demo of anything above? Send a note —
+                    I reply fast.
+                </p>
+                <div class="contact__links">
+                    <div class="contact__row"><span>github</span><a href="https://github.com/vanshkathpalia" target="_blank" rel="noopener">github.com/vanshkathpalia</a></div>
+                    <div class="contact__row"><span>linkedin</span><a href="#" data-linkedin>updating — link soon</a></div>
+                    <div class="contact__row"><span>email</span><a href="mailto:vanshkathpalia@gmail.com">vanshkathpalia@gmail.com</a></div>
+                </div>
             </div>
 
-        </section>
-    
-        <!--==================== project ====================-->
-        <section class="project section" id="project">
-            <h2 class="section__title">Project</h2>
-            <span class="section__subtitle">Most Recent Work</span>
-
-            <div class="project__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--======================== project 1 =============-->
-                    <div class="project__content grid swiper-slide">
-                        <img src="assets/1688628846026.jpg" alt="" class="Project__img">
-
-                        <div class="project__data">
-                            <h3 class="project__title">Scratch Project</h3>
-                            <p class="project__description">
-                                The gameplay revolves around the hero running endlessly through a challenging level, while the villain relentlessly chases them.
-                            </p>
-                            <a href="https://scratch.mit.edu/projects/590398480" class="button button--flex button--small project__button">
-                                More info
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
+            <form method="post" action="https://formspree.io/f/mpzbkjkg" class="form reveal">
+                <div class="form__row">
+                    <div class="field">
+                        <label for="name">name</label>
+                        <input id="name" type="text" name="Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">email</label>
+                        <input id="email" type="email" name="Email" required>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <form method="post" action="https://formspree.io/f/mpzbkjkg" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="name" class="contact__label">Name</label>
-                                <input type="text" name="Name" class="contact__input">
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="email" class="contact__label">Email</label>
-                                <input type="email" name="Email" class="contact__input">
-                            </div>
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="project-contact" class="contact__label">Subject</label>
-                            <input type="text" name="Subject" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="message-contact" class="contact__label">Message</label>
-                            <textarea name="Message" cols="0" rows="7" id="message-contact" class="contact__input"></textarea>
-                        </div>
-                        
-                        <div>
-                            <button type="submit" class="button button--flex">Send Message
-                                <!-- <i class="uil uil-message button__icon"></i> -->
-                            </button>
-                        </div>
-                    </form>    
+                <div class="field">
+                    <label for="subject">subject</label>
+                    <input id="subject" type="text" name="Subject">
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h5 class="footer__title">Vansh</h5>
-                    <span class="footer__subtitle">Tech Enthusiast</span>
+                <div class="field">
+                    <label for="message">message</label>
+                    <textarea id="message" name="Message" rows="6" required></textarea>
                 </div>
+                <button type="submit" class="btn btn--primary">Send message &rarr;</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
 
-                <!-- <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/vansh-kumar-kathpalia/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://github.com/vanshk27" target="_blank" class="home__social-icon">
-                        <i class="uil uil-github-alt"></i>
-                    </a> 
-                    <!-- <a href="https://www.youtube.com/aicoding" target="_blank" class="home__social-icon">
-                        <i class="uil uil-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ai.coding/" target="_blank" class="home__social-icon">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/aicoding_" target="_blank" class="home__social-icon">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a> 
-                </div> -->
-            </div>
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="wrap footer__in">
+        <div>
+            <div class="footer__name">Vansh Kumar</div>
+            <div class="footer__meta">builder · software engineer · est. building since '21</div>
+        </div>
+        <div class="footer__socials">
+            <a href="https://github.com/vanshkathpalia" target="_blank" rel="noopener">github</a>
+            <a href="mailto:vanshkathpalia@gmail.com">email</a>
+        </div>
+    </div>
+</footer>
 
-            <!-- <p class="footer__copy">&#169; Vansh. All rights reserved.</p> -->
-        </div> 
+<!-- ==================== MODAL ==================== -->
+<div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true">
+        <button class="modal__close" id="modal-close" aria-label="Close">&times;</button>
+        <div class="modal__id" id="modal-id"></div>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <div id="modal-body"></div>
+    </div>
+</div>
 
-    </footer>
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        securityLevel: 'loose',
+        htmlLabels: true,
+        flowchart: { htmlLabels: true, curve: 'basis', useMaxWidth: true, padding: 14, nodeSpacing: 45, rankSpacing: 48, wrappingWidth: 260 },
+        themeVariables: {
+            darkMode: true,
+            fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace',
+            fontSize: '13px',
+            background: '#0E1525',
+            mainBkg: '#16223A',
+            nodeBorder: '#46577A',
+            nodeTextColor: '#E9EFFB',
+            titleColor: '#E9EFFB',
+            textColor: '#AEBBD6',
+            lineColor: '#6B7CA0',
+            clusterBkg: '#101A2B',
+            clusterBorder: '#2C3C58',
+            edgeLabelBackground: '#101A2B'
+        }
+    });
+    window.__mermaid = mermaid;
+</script>
+<script>
+    // mobile nav
+    const list = document.getElementById('nav-list');
+    document.getElementById('nav-toggle').addEventListener('click', () => list.classList.add('open'));
+    document.getElementById('nav-close').addEventListener('click', () => list.classList.remove('open'));
+    list.querySelectorAll('.nav__link').forEach(l => l.addEventListener('click', () => list.classList.remove('open')));
 
+    // header shadow on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+
+    // scroll reveal
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // active nav link on scroll
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const links = [...document.querySelectorAll('.nav__link')];
+    window.addEventListener('scroll', () => {
+        const y = window.scrollY + 120;
+        let current = sections[0].id;
+        for (const s of sections) if (s.offsetTop <= y) current = s.id;
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+    });
+
+    // project detail modal
+    const modal = document.getElementById('modal');
+    const modalId = document.getElementById('modal-id');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    async function openModal(key) {
+        const src = document.getElementById('more-' + key);
+        const card = src.closest('.card');
+        modalId.textContent = card.querySelector('.card__id').textContent;
+        modalTitle.textContent = card.querySelector('.card__name').textContent;
+        modalBody.innerHTML = src.innerHTML;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const diagrams = modalBody.querySelectorAll('.mermaid');
+        if (diagrams.length && window.__mermaid) {
+            try { await window.__mermaid.run({ nodes: diagrams }); } catch (e) { /* stays as text */ }
+        }
+    }
+    function closeModal() {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.card__btn').forEach(b => b.addEventListener('click', () => openModal(b.dataset.modal)));
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
 </body>
 </html>
